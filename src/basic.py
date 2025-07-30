@@ -29,3 +29,5 @@ def makeTransaction(maxValue=3):
 
     return {'Alice':alicePays,'Bob':bobPays}
     #note that this has nothing to do with wether they have the amount to pay or not
+
+txnBuffer = [makeTransaction() for i in range(30)]
